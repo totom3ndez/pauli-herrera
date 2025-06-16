@@ -1,8 +1,10 @@
 @import "tailwindcss";
+@plugin "@midudev/tailwind-animations";
 
 @theme {
   --color-primary: #ffc7ba;
   --color-titles: #f34f3a;
+  --font-headers: 'Caveat Brush', cursive;
 }
 
 body {
@@ -13,6 +15,11 @@ body {
 
 .fade-in {
   animation: fadeIn ease-in-out .3s;
+}
+
+.fade-up {
+  transform: translateY(20px);
+  animation: fadeUp 1s ease-in-out forwards;
 }
 
 @keyframes fadeIn {
