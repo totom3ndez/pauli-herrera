@@ -1,0 +1,32 @@
+---
+import { getVideo } from "@/lib/wp";
+
+const videoUrl = await getVideo(19);
+---
+
+<section
+  class="flex items-center justify-center rounded-2xl w-full h-[600px] relative"
+>
+  <video
+    src={videoUrl}
+    autoplay
+    loop
+    muted
+    class="absolute top-0 left-0 w-full h-full object-cover z-0 rounded-2xl"
+  >
+  </video>
+  <div
+    class="z-1 w-full h-full flex bg-primary/70 rounded-2xl items-center justify-center text-xl flex-col gap-10"
+  >
+    <h2
+      class="text-6xl text-center md:text-[5vw] font-bold font-headers text-titles animate-fade-in-up"
+    >
+      Pauli Herrera
+    </h2>
+    <button
+      class="bg-titles animate-fade-in-up animate-delay-300 text-white font-bold px-4 py-6 rounded-2xl hover:bg-white hover:text-titles transition cursor-pointer"
+    >
+      Ver proyectos
+    </button>
+  </div>
+</section>

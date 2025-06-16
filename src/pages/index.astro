@@ -1,15 +1,10 @@
 ---
-import Layout from "../layouts/Layout.astro";
-import { getPageInfo } from "../lib/wp";
-
-const { title, content } = await getPageInfo("pagina-de-inicio");
+import Hero from "@/components/sections/hero/Hero.astro";
+import Layout from "@/layouts/Layout.astro";
 ---
 
-<Layout>
+<Layout title="Pauli - Sitio oficial">
 	<main class="mx-auto container">
-		<h1 class="text-3xl">
-			{title}
-		</h1>
-		<div set:html={content} />
+		<Hero />
 	</main>
 </Layout>

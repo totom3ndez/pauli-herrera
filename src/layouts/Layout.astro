@@ -1,8 +1,11 @@
 ---
 import "@fontsource-variable/inter";
-import "../styles/global.css";
-import Header from "../components/ui/Header.astro";
+import "@fontsource/caveat-brush";
+import "@/styles/global.css";
+import Header from "@/components/sections/header/Header.astro";
 import { ClientRouter } from "astro:transitions";
+
+const { title } = Astro.props;
 ---
 
 <!doctype html>
@@ -10,7 +13,7 @@ import { ClientRouter } from "astro:transitions";
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
-		<title>Astro Basics</title>
+		<title>{title}</title>
 		<ClientRouter />
 	</head>
 	<body class="bg-white relative md:max-w-6xl mx-auto">
