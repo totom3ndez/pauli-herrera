@@ -9,8 +9,7 @@ import react from '@astrojs/react';
 export default defineConfig({
   vite: {
     plugins: [tailwindcss()],
-    envPrefix: 'PUBLIC_'
+    envPrefix: 'PUBLIC_',
   },
-
   integrations: [react()]
 });
