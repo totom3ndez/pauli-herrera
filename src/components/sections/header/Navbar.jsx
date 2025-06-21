@@ -10,10 +10,10 @@ const MenuLinks = () => {
 
   return (
     <>
-      <a className={`px-4 py-1 rounded-xl transition ${pathname === '/' ? 'bg-titles text-white' : 'hover:text-white hover:bg-titles'}`} href="/">Inicio</a>
-      <a className={`px-4 py-1 rounded-xl transition ${pathname === '/proyectos' ? 'bg-titles text-white' : 'hover:text-white hover:bg-titles'}`} href="/proyectos">Proyectos</a>
-      <a className={`px-4 py-1 rounded-xl transition ${pathname === '/sobre-mi' ? 'bg-titles text-white' : 'hover:text-white hover:bg-titles'}`} href="/sobre-mi">Sobre mi</a>
-      <a className={`px-4 py-1 rounded-xl transition ${pathname === '/contacto' ? 'bg-titles text-white' : 'hover:text-white hover:bg-titles'}`} href="/contacto">Contácto</a>
+      <a className={`px-4 py-1 rounded-3xl transition ${pathname === '/' ? 'bg-titles text-white' : 'hover:text-white hover:bg-titles'}`} href="/">Inicio</a>
+      <a className={`px-4 py-1 rounded-3xl transition ${pathname === '/proyectos' ? 'bg-titles text-white' : 'hover:text-white hover:bg-titles'}`} href="/proyectos">Proyectos</a>
+      <a className={`px-4 py-1 rounded-3xl transition ${pathname === '/sobre-mi' ? 'bg-titles text-white' : 'hover:text-white hover:bg-titles'}`} href="/sobre-mi">Sobre mi</a>
+      <a className={`px-4 py-1 rounded-3xl transition ${pathname === '/contacto' ? 'bg-titles text-white' : 'hover:text-white hover:bg-titles'}`} href="/contacto">Contácto</a>
     </>
   );
 };
