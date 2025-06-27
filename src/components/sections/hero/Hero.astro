@@ -1,7 +1,4 @@
 ---
-import { getVideo } from "@/lib/wp";
-
-const videoUrl = await getVideo(24);
 import H1Text from "@/components/ui/H1Text.astro";
 import RedButton from "@/components/ui/RedButton.astro";
 ---
@@ -10,7 +7,7 @@ import RedButton from "@/components/ui/RedButton.astro";
   class="flex items-center justify-center rounded-4xl max-w-[1110px] h-[600px] mt-40 relative"
 >
   <video
-    src={videoUrl}
+    src={""}
     autoplay
     loop
     muted
@@ -20,7 +17,7 @@ import RedButton from "@/components/ui/RedButton.astro";
   <div
     class="z-1 w-full h-full flex bg-primary/70 rounded-4xl items-center justify-center text-xl flex-col gap-10"
   >
-    <H1Text title="Pauli Herrera" />
-    <RedButton title="Contacto" />
+    <H1Text title="Titulo" />
+    <RedButton title="Button" />
   </div>
 </section>
