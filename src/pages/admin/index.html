@@ -9,5 +9,18 @@
   <body>
     <!-- Cargar Netlify CMS -->
     <script src="https://unpkg.com/netlify-cms@^2.10.0/dist/netlify-cms.js"></script>
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <script>
+      netlifyIdentity.init();
+
+// Detectar el token de invitación y abrir el modal de registro
+if (window.location.search.includes('invite_token')) {
+  netlifyIdentity.on('init', user => {
+    if (!user) {
+      netlifyIdentity.open('signup');
+    }
+  });
+}
+      </script>
   </body>
 </html>
