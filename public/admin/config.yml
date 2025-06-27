@@ -15,4 +15,6 @@ collections:
       - { label: "Título", name: "title", widget: "string" }
       - { label: "Fecha", name: "date", widget: "datetime" }
       - { label: "Imagen destacada", name: "thumbnail", widget: "image" }
+      - { label: "Galería de imágenes", name: "gallery", widget: "list", field: { label: "Imagen", name: "image", widget: "image" } }
+      - { label: "Etiquetas", name: "tags", widget: "list", default: [], hint: "Agrega palabras clave como etiquetas (ej: diseño, web, UX)" }
       - { label: "Contenido", name: "body", widget: "markdown" }
